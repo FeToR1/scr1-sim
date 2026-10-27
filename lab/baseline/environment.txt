@@ -1,0 +1,24 @@
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.5 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+GNU Make 4.3
+Verilator 5.052 2026-09-05 rev v5.052
+riscv64-unknown-elf-gcc () 12.2.1 20221101
+GNU ld (GNU Binutils) 2.38.20220701
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+ebb5e3551a9d93c0ee95f0b767dd878b8927e702
+ 41537ea30b0104438b4ff993e7d349af26900acf dependencies/coremark (v1.01-34-g41537ea)
+ 9141cf9274b610d059199e8aa2e21f54a0bc6a6e dependencies/riscv-arch (2.4.6)
+ d51259b2a949be3af02e776c39e135402675ac9b dependencies/riscv-compliance (0.1-64-gd51259b2a)
+ 5f8a4918c6482e65c67a2b7decd5c2af3e3fe0e5 dependencies/riscv-tests (remotes/origin/hw_watchpoint-104-g5f8a491)
+ 43d3d53809085e2c8f030d72eed1bdf798bfb31a dependencies/riscv-tests/env (remotes/origin/priv-1.10-27-g43d3d53)

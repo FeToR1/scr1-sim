@@ -1,0 +1,1243 @@
+scr1_top_tb_ahb
+[0;34m---Test:                          add.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         addi.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          and.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         andi.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                        auipc.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          beq.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          bge.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         bgeu.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          blt.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         bltu.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          bne.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          csr.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                      fence_i.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                      illegal.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          jal.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         jalr.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                           lb.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          lbu.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                           lh.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          lhu.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          lui.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                           lw.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                      ma_addr.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                     ma_fetch.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         mcsr.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                           or.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          ori.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                           sb.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                       sbreak.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                        scall.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                           sh.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                        shamt.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                       simple.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          sll.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         slli.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          slt.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         slti.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                        sltiu.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         sltu.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          sra.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         srai.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          srl.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         srli.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          sub.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                           sw.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          xor.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         xori.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          div.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         divu.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          mul.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         mulh.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                       mulhsu.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                        mulhu.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          rem.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                         remu.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                          rvc.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-ADD-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:         compliance_I-ADDI-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-AND-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:         compliance_I-ANDI-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:        compliance_I-AUIPC-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-BEQ-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-BGE-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:         compliance_I-BGEU-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-BLT-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:         compliance_I-BLTU-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-BNE-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:  compliance_I-DELAY_SLOTS-01.hex[0m
+# Test Begin
+# Test part A1 - test JAL
+# Test part A1  - Complete
+# Test part A2 - test JALR
+# Test part A2  - Complete
+# Test part B1 - test BEQ
+# Test part A3  - Complete
+# Test part B2 - test BNE
+# Test part A4  - Complete
+# Test part B3 - test BLT
+# Test part A5  - Complete
+# Test part B4 - test BLTU
+# Test part B  - Complete
+# Test part B5 - test BGE
+# Test part C  - Complete
+# Test part B6 - test BGEU
+# Test part D  - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:    compliance_I-ENDIANESS-01.hex[0m
+# Test Begin
+# Test part A - test loading word by LW, LH, LB
+# Test part A1  - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:           compliance_I-IO-01.hex[0m
+# Test Begin
+# Test part A1 - general test of value 0 with 0, 1, -1, MIN, MAX register values
+# Test part A1 - Complete
+# Test part A2 - general test of value 1 with 0, 1, -1, MIN, MAX register values
+# Test part A2 - Complete
+# Test part A3 - general test of value -1 with 0, 1, -1, MIN, MAX register values
+# Test part A3 - Complete
+# Test part A4 - general test of value 0x7FFFFFFF with 0, 1, -1, MIN, MAX register values
+# Test part A4 - Complete
+# Test part A5 - general test of value 0x80000000 with 0, 1, -1, MIN, MAX register values
+# Test part A5 - Complete
+# Test part B - testing forwarding between instructions
+# Test part B - Complete
+# Test part C - testing writing to x0
+# Test part C - Complete
+# Test part D - testing forwarding throught x0
+# Test part D - Complete
+# Test part E - testing moving (add with x0)
+# Test part E - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-JAL-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:         compliance_I-JALR-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:           compliance_I-LB-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-LBU-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:           compliance_I-LH-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-LHU-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-LUI-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:           compliance_I-LW-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-NOP-01.hex[0m
+# Test Begin
+# Test part A1 - general test, instruction should not change any register
+# Test part A1  - Complete
+# Test part A2 - general test, only 5 cycles are executed
+# Test part A2  - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:           compliance_I-OR-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-ORI-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:      compliance_I-RF_size-01.hex[0m
+# Test Begin
+# Test part A1 - test registers x0 - x15
+# Test part A1  - Complete
+# Test part A2 - test registers x16 - x30
+# Test part A2  - Complete
+# Test part A3 - test registers x0 - x3 again (were not overwritten)
+# Test part A3  - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:     compliance_I-RF_width-01.hex[0m
+# Test Begin
+# Test part A1 - test x1 - x15 are 32 bits
+# Test part A1  - Complete
+# Test part A2 - test x16 - x30 are 32 bits
+# Test part A2  - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:        compliance_I-RF_x0-01.hex[0m
+# Test Begin
+# Test part A1 - test computational instructions - register-immediate
+# Test part A1  - Complete
+# Test part A2 - test computational instructions - register-register
+# Test part A2  - Complete
+# Test part A3 - test compare instructions
+# Test part A3  - Complete
+# Test part A4 - test jump and link instructions
+# Test part A4  - Complete
+# Test part A5 - test load instructions
+# Test part A5  - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:           compliance_I-SB-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:           compliance_I-SH-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-SLL-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:         compliance_I-SLLI-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-SLT-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:         compliance_I-SLTI-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:        compliance_I-SLTIU-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:         compliance_I-SLTU-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-SRA-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:         compliance_I-SRAI-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-SRL-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:         compliance_I-SRLI-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-SUB-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:           compliance_I-SW-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:          compliance_I-XOR-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:         compliance_I-XORI-01.hex[0m
+Test Begin
+# Test number 1
+# Test number 2
+# Test number 3
+# Test number 4
+# Test number 5
+# Test number 6
+# Test number 7
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:        compliance_I-CSRRC-01.hex[0m
+# Test Begin
+# Test part A1 - general test of csrrc
+# Test part A1  - Complete
+# Test part A2 - general test of csrrc
+# Test part A2  - Complete
+# Test part B - testing forwarding between instructions
+# Test part A3  - Complete
+# Test part C - testing writing to x0 and reading from x0
+# Test part A4  - Complete
+# Test part D - testing forwarding throught x0
+# Test part A5  - Complete
+# Test part E - testing csrrc with same dst and src registers
+# Test part B  - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:       compliance_I-CSRRCI-01.hex[0m
+# Test Begin
+# Test part A1 - general test of csrrci
+# Test part A1  - Complete
+# Test part A2 - general test of csrrci
+# Test part A2  - Complete
+# Test part B - testing writing to x0
+# Test part A3  - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:        compliance_I-CSRRS-01.hex[0m
+# Test Begin
+# Test part A1 - general test of CSRRS
+# Test part A1  - Complete
+# Test part A2 - general test of CSRRS
+# Test part A2  - Complete
+# Test part B - testing forwarding between instructions
+# Test part A3  - Complete
+# Test part C - testing writing to x0 and reading from x0
+# Test part A4  - Complete
+# Test part D - testing forwarding throught x0
+# Test part A5  - Complete
+# Test part E - testing csrrs with same dst and src registers
+# Test part B  - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:       compliance_I-CSRRSI-01.hex[0m
+# Test Begin
+# Test part A1 - general test of CSRRSI
+# Test part A1  - Complete
+# Test part A2 - general test of CSRRSI
+# Test part A2  - Complete
+# Test part B - testing writing to x0
+# Test part A3  - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:        compliance_I-CSRRW-01.hex[0m
+# Test Begin
+# Test part A - general test of CSRRW
+# Test part A1  - Complete
+# Test part B - testing forwarding between instructions
+# Test part A2  - Complete
+# Test part C - testing writing to x0
+# Test part A3  - Complete
+# Test part D - testing forwarding throught x0
+# Test part A4  - Complete
+# Test part E - testing csrrw with same dst and src registers
+# Test part A5  - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:       compliance_I-CSRRWI-01.hex[0m
+# Test Begin
+# Test part A - general test of CSRRWI
+# Test part A1  - Complete
+# Test part B - testing writing to x0
+# Test part A2  - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:      compliance_I-FENCE.I-01.hex[0m
+# Test Begin
+# Test part A - test fence
+# Test part A1  - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:               compliance_DIV.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:              compliance_DIVU.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:               compliance_MUL.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:              compliance_MULH.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:            compliance_MULHSU.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:             compliance_MULHU.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:               compliance_REM.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:              compliance_REMU.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:             compliance_C-ADD.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:            compliance_C-ADDI.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:        compliance_C-ADDI16SP.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:        compliance_C-ADDI4SPN.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:             compliance_C-AND.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:            compliance_C-ANDI.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:            compliance_C-BEQZ.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:            compliance_C-BNEZ.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:               compliance_C-J.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:             compliance_C-JAL.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:            compliance_C-JALR.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:              compliance_C-JR.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:              compliance_C-LI.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:             compliance_C-LUI.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:              compliance_C-LW.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:            compliance_C-LWSP.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:              compliance_C-MV.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:              compliance_C-OR.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:            compliance_C-SLLI.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:            compliance_C-SRAI.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:            compliance_C-SRLI.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:             compliance_C-SUB.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:              compliance_C-SW.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:            compliance_C-SWSP.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:             compliance_C-XOR.hex[0m
+Test Begin Reserved regs ra(x1) a0(x10) t0(x5)
+# Test number 1 - corner cases
+# Test number 2 - corner cases
+# Test number 3 - corner cases
+# Test number 4 - corner cases
+# Test number 5 - corner cases
+Test End
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_add-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_addi-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_and-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_andi-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                arch_auipc-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                arch_fence-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_jalr-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:             arch_lb-align-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:            arch_lbu-align-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:             arch_lh-align-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:            arch_lhu-align-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_lui-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:             arch_lw-align-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                   arch_or-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_ori-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:             arch_sb-align-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:             arch_sh-align-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_sll-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_slli-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_slt-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_slti-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                arch_sltiu-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_sltu-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_sra-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_srai-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_srl-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_srli-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_sub-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:             arch_sw-align-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_xor-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_xori-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_Fencei.hex[0m
+# Test Begin
+# Test part A - test fence
+# Test part A1  - Complete
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:                   arch_ecall.hex[0m
+# Test part A - test EBREAK
+# Test End
+[0;32mTest passed[0m
+[0;34m---Test:         arch_misalign-beq-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:         arch_misalign-bge-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:        arch_misalign-bgeu-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:         arch_misalign-blt-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:        arch_misalign-bltu-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:         arch_misalign-bne-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:         arch_misalign-jal-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:          arch_misalign-lh-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:         arch_misalign-lhu-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:          arch_misalign-lw-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:          arch_misalign-sh-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:          arch_misalign-sw-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:       arch_misalign1-jalr-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:       arch_misalign2-jalr-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_cadd-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                arch_caddi-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:            arch_caddi16sp-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:            arch_caddi4spn-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_cand-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                arch_candi-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                arch_cbeqz-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                arch_cbnez-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                   arch_cj-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_cjal-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                arch_cjalr-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_cjr-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_cli-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_clui-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_clw-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                arch_clwsp-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_cmv-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_cnop-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_cor-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                arch_cslli-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                arch_csrai-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                arch_csrli-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_csub-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_csw-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_cxor-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_div-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_divu-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_mul-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_mulh-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:               arch_mulhsu-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                arch_mulhu-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                  arch_rem-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                 arch_remu-01.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                   isr_sample.hex[0m
+[0;32mTest passed[0m
+[0;34m---Test:                     coremark.hex[0m
+CoreMark 1.0
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 5013
+Total time (secs): 0
+ERROR! Must execute for at least 10 secs for a valid result!
+Iterations       : 1
+Compiler version : GCC12.2.1 20221101
+Compiler flags   : -O3 -funroll-loops -fpeel-loops -fgcse-sm -fgcse-las -flto
+Memory location  : STATIC
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0xe714
+Errors detected
+[0;32mTest passed[0m
+[0;34m---Test:                  dhrystone21.hex[0m
+
+Dhrystone Benchmark, Version 2.1 (Language: C)
+
+Program compiled without 'register' attribute
+
+Execution starts, 500 runs through Dhrystone
+Execution ends
+
+Final values of the variables used in the benchmark:
+
+Int_Glob:            5
+        should be:   5
+Bool_Glob:           1
+        should be:   1
+Ch_1_Glob:           A
+        should be:   A
+Ch_2_Glob:           B
+        should be:   B
+Arr_1_Glob[8]:       7
+        should be:   7
+Arr_2_Glob[8][7]:    510
+        should be:   Number_Of_Runs + 10
+Ptr_Glob->
+  Ptr_Comp:          4728800
+        should be:   (implementation-dependent)
+  Discr:             0
+        should be:   0
+  Enum_Comp:         2
+        should be:   2
+  Int_Comp:          17
+        should be:   17
+  Str_Comp:          DHRYSTONE PROGRAM, SOME STRING
+        should be:   DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->
+  Ptr_Comp:          4728800
+        should be:   (implementation-dependent), same as above
+  Discr:             0
+        should be:   0
+  Enum_Comp:         1
+        should be:   1
+  Int_Comp:          18
+        should be:   18
+  Str_Comp:          DHRYSTONE PROGRAM, SOME STRING
+        should be:   DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:           5
+        should be:   5
+Int_2_Loc:           13
+        should be:   13
+Int_3_Loc:           7
+        should be:   7
+Enum_Loc:            1
+        should be:   1
+Str_1_Loc:           DHRYSTONE PROGRAM, 1'ST STRING
+        should be:   DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:           DHRYSTONE PROGRAM, 2'ND STRING
+        should be:   DHRYSTONE PROGRAM, 2'ND STRING
+
+Number_Of_Runs= 500, HZ= 1000000
+Time: begin= 44666, end= 246239, diff= 201573
+Microseconds for one run through Dhrystone: 403
+Dhrystones per Second:                      2480
+[0;32mTest passed[0m
+[0;34m---Test:                        hello.hex[0m
+Hello from SCR1!
+[0;32mTest passed[0m
+
+#--------------------------------------
+# Summary: 224/224 tests passed
+#--------------------------------------
+
+- /work/src/tb/scr1_top_tb_runtests.sv:199: Verilog $finish
