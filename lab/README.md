@@ -24,7 +24,7 @@
 
 Подмодули инициализированы на версиях, закреплённых в репозитории.
 Список ISA-тестов ограничен `sbreak.S`. Обработчик Breakpoint выводит
-`break break`. Параметры векторов ядра и linker-скрипты пока исходные.
+`break break`. Старт программы размещён на `0x400`, обработчик — на `0xA00`.
 
 ## Сборка и запуск
 
@@ -32,7 +32,7 @@
 
 ```powershell
 cd D:\Coding\risk-v\scr1-sim
-docker run --rm --mount "type=bind,source=$($PWD.Path),target=/work" scr1-lab sh -c "make clean && make TARGETS=riscv_isa"
+docker run --rm --mount "type=bind,source=$($PWD.Path),target=/work" scr1-lab sh -c "make clean && make run_verilator_wf TARGETS=riscv_isa TRACE=1"
 ```
 
 Образ уже собран. После правок исходников достаточно `docker run`.
@@ -43,7 +43,8 @@ docker build -t scr1-lab .
 ```
 
 Папка проекта подключается к `/work`, результаты появляются в `build`
-на Windows. Параметр `--rm` удаляет завершившийся контейнер, сохраняя образ
+на Windows. `TRACE=1` включает текстовый трейс, `run_verilator_wf` — VCD.
+Параметр `--rm` удаляет завершившийся контейнер, сохраняя образ
 и файлы в подключённой папке.
 
 ## Проверка исходного проекта
@@ -69,7 +70,7 @@ docker build -t scr1-lab .
 - [image.txt](baseline/image.txt) — идентификатор проверенного Docker-образа.
 
 Дамп подтверждает исходные адреса: `_start = 0x200`,
-`trap_vector = 0x1C0`. По варианту они должны стать `0x400` и `0xA00`.
+`trap_vector = 0x1C0`. Требуемые значения по варианту — `0x400` и `0xA00`.
 
 CoreMark запускается с `ITERATIONS=1`: контрольные суммы совпали с эталоном,
 но он сообщает о длительности меньше 10 секунд и печатает `Errors detected`.
@@ -100,7 +101,7 @@ rv32_isa_tests := isa/rv32mi/sbreak.S
 направляет его в код завершения симуляции. При добавлении сообщения нужно
 различать Breakpoint и этот завершающий `ecall`.
 
-## Вывод сообщения при Breakpoint
+## Вывод сообщения при Breakpoint до переноса векторов
 
 В `sim/tests/common/riscv_macros.h` после чтения `mcause` добавлена проверка
 `CAUSE_BREAKPOINT` (3). Только для этого исключения выполняется переход
@@ -129,14 +130,73 @@ rv32_isa_tests := isa/rv32mi/sbreak.S
 Вывод сохранён в [sbreak_message.log](sbreak_message.log).
 По дампу `_start = 0x200`, `trap_vector = 0x1C0` — адреса на этом этапе сохранены.
 
-## Следующие шаги
+## Перенос векторов
 
-1. Настроить векторы и размещение кода по адресам `0x400` и `0xA00`.
-2. Выполнить симуляцию с трассировкой и сформировать VCD для GTKWave.
-3. Сохранить итоговые `test_results.txt`, `*.dump`, `trace_mprf_diff_*.log`
-   и `trace_csr_*.log` в `results/`.
-4. Дополнить отчёт и закоммитить изменения.
+В `src/includes/scr1_arch_description.svh` установлены:
+
+```systemverilog
+SCR1_ARCH_RST_VECTOR = 'h400;
+SCR1_ARCH_MTVEC_BASE = 'hA00;
+```
+
+В `riscv_macros.h` стартовый код находится в `.text.init`,
+обработчик — в отдельной `.text.trap`. Старые `.org 0xC0` и выравнивания
+между обработчиком и стартом удалены.
+
+В `link.ld` стартовый код размещается с адреса `0x400`, а `.text.trap` —
+с `0xA00`. Служебные `SIM_EXIT` и `SIM_STOP` на `0xF4` и `0xF8` сохранены:
+они нужны тестовому окружению для завершения симуляции.
+
+После переноса выполнен запуск с `TRACE=1` и генерацией VCD.
+Результат — **1 из 1 теста PASS**, сообщение `break break` выведено один раз.
+
+| Проверка | Результат |
+| --- | --- |
+| ELF entry point и `_start` | `0x400` |
+| `trap_vector` | `0xA00` |
+| Breakpoint: `mcause` | `3` |
+| Breakpoint: `mepc` | `0xA62`, адрес `do_break` |
+| Переход при Breakpoint | `0xA62 → 0xA00` |
+| Завершающий `ecall`: `mcause` | `11` |
+
+Адреса проверены по дампу; переход в обработчик и причина исключения —
+по трейсу. В VCD также проверены PC, `mtvec` и причина исключения.
+
+## Итоговые результаты
+
+Файлы сохранены в `results/`:
+
+| Файл | Содержимое |
+| --- | --- |
+| [test_results.txt](../results/test_results.txt) | `sbreak.hex — OK — PASS` |
+| [sbreak.dump](../results/sbreak.dump) | Дизассемблер с новыми адресами |
+| [trace_mprf_diff_0.log](../results/trace_mprf_diff_0.log) | Изменения обычных регистров |
+| [trace_csr_0.log](../results/trace_csr_0.log) | Записи CSR при исключениях |
+| [tracelog_core_0.log](../results/tracelog_core_0.log) | Исходный объединённый трейс SCR1 |
+| [sim_results.txt](../results/sim_results.txt) | Вывод сообщения и итог симуляции |
+| [simx.vcd](../results/simx.vcd) | Временная диаграмма |
+
+В этой версии SCR1 текстовый трейс объединён в `tracelog_core_0.log`.
+Файлы MPRF и CSR получены фильтрацией его строк: записи `x00`–`x31`
+отделены от записей CSR. Значения и время событий сохранены.
+Промежуточный каталог `build/` в репозиторий не включается.
+
+## Просмотр в GTKWave
+
+GTKWave 3.3.100 для Windows установлен отдельно от Docker.
+Загрузка итогового VCD проверена командой `--exit`: ошибок чтения нет.
+
+Из корня проекта открыть диаграмму можно так:
+
+```powershell
+& "$env:LOCALAPPDATA\Programs\GTKWave\gtkwave64\bin\gtkwave.exe" .\results\simx.vcd
+```
+
+Для просмотра нужны сигналы `curr_pc` и поля `mtvec`, `mepc`, `mcause`
+в структуре `csr_trace1` модуля трассировки. При Breakpoint значение `mcause`
+равно `3`, `mepc` равно `0xA62`, а PC переходит на `0xA00`.
 
 Источники инструментов:
 [Verilator](https://verilator.org/guide/latest/install.html),
-[Syntacore SC-DT](https://syntacore.com/tools/development-tools/previous-releases).
+[Syntacore SC-DT](https://syntacore.com/tools/development-tools/previous-releases),
+[GTKWave для Windows](https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/).
