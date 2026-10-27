@@ -108,8 +108,10 @@
         .weak stvec_handler;                                            \
         .weak mtvec_handler;                                            \
 trap_vector:                                                            \
-        /* test whether the test came from pass/fail */                 \
+        /* Print Breakpoint; ECALL reports pass/fail below. */          \
         csrr a4, mcause;                                                \
+        li a5, CAUSE_BREAKPOINT;                                        \
+        beq a4, a5, print_breakpoint;                                   \
         li a5, CAUSE_USER_ECALL;                                        \
         beq a4, a5, _report;                                            \
         li a5, CAUSE_SUPERVISOR_ECALL;                                  \
@@ -117,6 +119,7 @@ trap_vector:                                                            \
         li a5, CAUSE_MACHINE_ECALL;                                     \
         beq a4, a5, _report;                                            \
         /* if an mtvec_handler is defined, jump to it */                \
+dispatch_trap:                                                          \
         la a4, mtvec_handler;                                           \
         beqz a4, 1f;                                                    \
         jr a4;                                                          \
@@ -163,6 +166,18 @@ _start:                                                                 \
         csrw mepc, t0;                                                  \
         csrr a0, mhartid;                                               \
         mret;                                                           \
+        .section .text;                                                 \
+print_breakpoint:                                                       \
+        la t0, breakpoint_message;                                      \
+        li t1, 0xF0000000;                                              \
+1:      lbu t2, 0(t0);                                                  \
+        beqz t2, dispatch_trap;                                         \
+        sb t2, 0(t1);                                                   \
+        addi t0, t0, 1;                                                 \
+        j 1b;                                                           \
+        .section .rodata;                                               \
+breakpoint_message:                                                     \
+        .asciz "break break\n";                                         \
         .section .text;                                                 \
 _run_test:
 

@@ -1,0 +1,10 @@
+scr1_top_tb_ahb
+[0;34m---Test:                       sbreak.hex[0m
+break break
+[0;32mTest passed[0m
+
+#--------------------------------------
+# Summary: 1/1 tests passed
+#--------------------------------------
+
+- /work/src/tb/scr1_top_tb_runtests.sv:199: Verilog $finish
