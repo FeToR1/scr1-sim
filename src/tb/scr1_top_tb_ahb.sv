@@ -389,5 +389,19 @@ scr1_memory_tb_ahb #(
     .dmem_hresp             (dmem_hresp )
 );
 
+
+if (i_top.i_core_top.i_pipe_top.exu2mprf_w_req &&
+    i_top.i_core_top.i_pipe_top.i_pipe_exu.exu_queue.ialu_cmd
+        == SCR1_IALU_CMD_SLL &&
+    i_top.i_core_top.i_pipe_top.i_pipe_exu.exu_queue.ialu_op
+        == SCR1_IALU_OP_REG_REG) begin
+
+    $display("SLL: PC=%08h, rs1_data=%08h, rs2_data=%08h, result=%08h",
+            i_top.i_core_top.i_pipe_top.curr_pc,
+            i_top.i_core_top.i_pipe_top.mprf2exu_rs1_data,
+            i_top.i_core_top.i_pipe_top.mprf2exu_rs2_data,
+            i_top.i_core_top.i_pipe_top.exu2mprf_rd_data);
+end
+
 endmodule : scr1_top_tb_ahb
 
