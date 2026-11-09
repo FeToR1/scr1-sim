@@ -1,6 +1,6 @@
 
 Вариант 10 
-ssl, вывод PC
+sll, вывод PC
 
 Для запуска был создан docker container
 ```
@@ -19,15 +19,19 @@ make TARGETS=riscv_isa rv32_isa_tests=isa/rv32ui/sll.S
 
 В make уже готов run_verilator_wf, который сохраняет и временные диаграммы
 
+```
+make run_verilator_wf TARGETS=riscv_isa rv32_isa_tests=isa/rv32ui/sll.S
+```
+
 ![signals](pics/signals.png)
 
 
-Например, для теста 11 
+Например, для проверка 11 из теста на sll 
 ```
 TEST_RR_OP(11, sll, 0xffffffff80000000, 0xffffffffffffffff, 31);
 ```
 
-В ssl.dump видно адрес инструкции, откуда начинается тест
+В sll.dump видно адрес инструкции, откуда начинается тест
 
 ```
 00000342 <test_11>:
@@ -72,6 +76,8 @@ TEST_RR_OP(11, sll, 0xffffffff80000000, 0xffffffffffffffff, 31);
 
 ![signals2](pics/signals2.png)
 
+
+Сначала в x1 записывается ffffffff, затем в x2 - 31. Блок выборки заранее запрашивает инструкцию по адресу 0x348 и получает её машинный код 002091b3. Когда curr_pc принимает значение 0x348, на входах выполнения присутствуют подготовленные операнды. При активном exu2mprf_w_req результат 80000000 записывается в x3 на нарастающем фронте clk. Следующие команды сравнивают результат с эталоном.
 
 ```
 scr1_top_tb_ahb
