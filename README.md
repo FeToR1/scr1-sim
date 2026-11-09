@@ -79,6 +79,26 @@ TEST_RR_OP(11, sll, 0xffffffff80000000, 0xffffffffffffffff, 31);
 
 Сначала в x1 записывается ffffffff, затем в x2 - 31. Блок выборки заранее запрашивает инструкцию по адресу 0x348 и получает её машинный код 002091b3. Когда curr_pc принимает значение 0x348, на входах выполнения присутствуют подготовленные операнды. При активном exu2mprf_w_req результат 80000000 записывается в x3 на нарастающем фронте clk. Следующие команды сравнивают результат с эталоном.
 
+Для обнаружения команды в `src/tb/scr1_top_tb_ahb.sv` добавлен несинтезируемый блок наблюдения:
+
+```systemverilog
+always @(posedge clk) begin
+    if (i_top.i_core_top.i_pipe_top.exu2mprf_w_req &&
+        i_top.i_core_top.i_pipe_top.i_pipe_exu.exu_queue.ialu_cmd
+            == SCR1_IALU_CMD_SLL &&
+        i_top.i_core_top.i_pipe_top.i_pipe_exu.exu_queue.ialu_op
+            == SCR1_IALU_OP_REG_REG) begin
+        $display("SLL: PC=%08h, rs1_data=%08h, rs2_data=%08h, result=%08h",
+            i_top.i_core_top.i_pipe_top.curr_pc,
+            i_top.i_core_top.i_pipe_top.mprf2exu_rs1_data,
+            i_top.i_core_top.i_pipe_top.mprf2exu_rs2_data,
+            i_top.i_core_top.i_pipe_top.exu2mprf_rd_data);
+    end
+end
+```
+
+Блок выполняется на каждом нарастающем фронте `clk`. Условие `exu2mprf_w_req` подтверждает, что действительная инструкция дошла до записи результата, поэтому сохранённый код операции при простое не вызывает лишний вывод. Проверка `ialu_cmd == SCR1_IALU_CMD_SLL` выбирает сдвиг влево, а `ialu_op == SCR1_IALU_OP_REG_REG` требует два регистровых операнда и отличает `sll` от `slli`. При выполнении всех условий `$display` выводит PC текущей команды, оба операнда и результат в шестнадцатеричном виде; `%08h` задаёт ширину поля не менее восьми цифр с дополнением нулями.
+
 ```
 scr1_top_tb_ahb
 ---Test:                          sll.hex
